@@ -4,12 +4,14 @@ Component Name: Admin Tweaks
 Description: Tweak Wordpress Admin
 Category: Utilities
 Tags: Admin, Login, Media, Shortcodes
-Version: 1.0.0
+Version: 1.0.1
 Author: Waboot Team <info@waboot.io>
 Author URI: http://www.waboot.io
  */
 
 if(!class_exists("\\WBF\\modules\\components\\Component")) return;
+
+if(class_exists('Admin_Tweaks')) return;
 
 class Admin_Tweaks extends \WBF\modules\components\Component {
 	/**
